@@ -17,7 +17,7 @@ void plot(int xc,int yc,int x,int y)
 int main()
 {
   int gd=DETECT,gm;
-  int xc,yc,x,y,r;
+  int xc,yc,x,y,r,p;
   printf("Enter the coordinates of the centre of the circle  ");
   scanf("%d",&xc);
   scanf("%d",&yc);
@@ -44,7 +44,7 @@ int main()
       y=y-1;
       p=p+((4*(x-y)+10));
     }
-    plot(xc,yc,x,y)
+    plot(xc,yc,x,y);
   }
   getch();
   closegraph();
